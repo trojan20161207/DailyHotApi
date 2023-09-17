@@ -27,7 +27,7 @@ const headers = {
 // it之家特殊处理 - url
 const replaceLink = (url) => {
   const match = url.match(/[html|live]\/(\d+)\.htm/)[1];
-  return `https://www.ithome.com/0/${match.slice(0, 3)}/${match.slice(3)}.htm`;
+  return `https://www.ithome.com/${match.slice(0, 3)}/${match.slice(3)}.htm`;
 };
 
 // 数据处理
